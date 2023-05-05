@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hi Mom!</title>
+    <title>JournE</title>
 </head>
 <body>
-    <div>Hi Mom! Let's get this party started!</div>
+    <h1>JournE</h1>
+    <h2 id="current_date"></h2>
+    <script>
+        date = new Date();
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        day = date.getDate();
+        document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+    </script>
 </body>
 </html>
